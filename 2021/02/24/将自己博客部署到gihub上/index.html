@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo admin 插件安装, Tanyu">
+    <meta name="keywords" content="将自己博客部署到gihub上, Tanyu">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo admin 插件安装 | Tanyu</title>
+    <title>将自己博客部署到gihub上 | Tanyu</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -158,12 +158,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo admin 插件安装</h1>
+                    <h1 class="description center-align post-title">将自己博客部署到gihub上</h1>
                 </div>
             </div>
         </div>
@@ -316,17 +316,19 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h5 id="第一步-安装hexo-admin插件"><a href="#第一步-安装hexo-admin插件" class="headerlink" title="第一步 安装hexo-admin插件"></a>第一步 安装hexo-admin插件</h5><pre><code>    在hexo博客目录下输入：npm install --save hexo-admin
+                <p>1.登录github网站：</p>
+<pre><code>点击“new repository”—输入GitHub用户名.github.io—点击“create repository”
 </code></pre>
-<h6 id="第二步-启动访问"><a href="#第二步-启动访问" class="headerlink" title="第二步 启动访问"></a>第二步 启动访问</h6><pre><code>安装完成后，从启 hexo s,在浏览器中输入地址http://127.0.0.1:4000/admin
+<p>2.在github网中配置好仓库名字，复制网址<a target="_blank" rel="noopener" href="https://github.com/GitHub%E7%94%A8%E6%88%B7%E5%90%8D/GitHub%E7%94%A8%E6%88%B7%E5%90%8D.github.io.git">https://github.com/GitHub用户名/GitHub用户名.github.io.git</a></p>
+<p>3.在hexo博客的目录中找_config.yml文件编辑：</p>
+<pre><code>deploy:
+type: &#39;git&#39;
+repo: https://github.com/GitHub用户名/GitHub用户名.github.io.git
+branch: master
 </code></pre>
-<h6 id="第三步-配置访问权限"><a href="#第三步-配置访问权限" class="headerlink" title="第三步 配置访问权限"></a>第三步 配置访问权限</h6><pre><code>改文件 _config.yml 
-admin:
-  username: admin
-  password_hash:$2a$10$BQbSYjthZoQGVcNbuMLnNe1YhHhIOzZR5BHxbJ1eHdKvQ8tdH4Ji6
-  secret: &#39;123456&#39;
-</code></pre>
-<p>我们暂定用户名admin，密码123456。<br>进入Settings &gt; Setup authentification，在里面输入密码，生成hash,把下面代码复制到_config.yml中。重新启动 hexo s 即可</p>
+<p>4.在命令行输入：hexo g -d 回车 推送到github中。</p>
+<p>5.在浏览器中输入：<a target="_blank" rel="noopener" href="https://github用户名.github.io/">https://GitHub用户名.github.io/</a> 查看博客。</p>
+<p>注：GitHub用户名 是自己的用户的名字。</p>
 
                 
             </div>
@@ -353,7 +355,7 @@ admin:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://127.0.0.1/2021/02/24/hexo-admin-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/">http://127.0.0.1/2021/02/24/hexo-admin-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/</a>
+                    <a href="http://127.0.0.1/2021/02/24/%E5%B0%86%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0gihub%E4%B8%8A/">http://127.0.0.1/2021/02/24/%E5%B0%86%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0gihub%E4%B8%8A/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -564,9 +566,10 @@ admin:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/02/24/%E5%B0%86%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0gihub%E4%B8%8A/">
                     <div class="card-image">
@@ -584,9 +587,9 @@ admin:
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -595,6 +598,7 @@ admin:
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -613,13 +617,13 @@ admin:
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/22/Hexo-editor%20%E7%AE%80%E4%BB%8B/">
+                <a href="/2021/02/24/hexo-admin-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Hexo-editor 简介">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="hexo admin 插件安装">
                         
-                        <span class="card-title">Hexo-editor 简介</span>
+                        <span class="card-title">hexo admin 插件安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -630,7 +634,7 @@ admin:
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-24
                             </span>
                         <span class="publish-author">
                             
